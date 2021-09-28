@@ -90,9 +90,9 @@ header{
     width: 35rem;
     background:#1a1a1a;
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
-    flex-flow: column;
     text-align: center;
 }
 
@@ -103,6 +103,7 @@ header .user img{
     object-fit: cover;
     margin-bottom: 1rem;
     border: .7rem solid var(--blue);
+
 }
 
 header .user .name{
@@ -132,9 +133,28 @@ header .navbar ul li a{
     color: #fff;
     font-size: 2rem;
     border-radius: 5rem;
+    
 }
 
 header .navbar ul li a:hover{
+    background: var(--blue);
+}
+
+
+header .navbaar ul{
+    list-style: none;
+    
+}
+
+header  .navbaar  ul li i{
+    display: flex;
+    flex-direction: column;
+    font-size: 4.5rem;
+    color:#333;
+    padding:1rem;
+}
+
+header .navbaar ul  li i:hover{
     background: var(--blue);
 }
 
@@ -349,6 +369,13 @@ header .navbar ul li a:hover{
 .contact .row .content .info h3 i{
     padding-right: 1rem;
     color: var(--blue);
+}
+
+.top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
 }
 
 @media (max-width:1200px){
